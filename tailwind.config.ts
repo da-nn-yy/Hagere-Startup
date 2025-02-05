@@ -16,7 +16,7 @@ const config: Config = {
             colors: {
                 primary: {
                     "100": "#FFE8F0",
-                    DEFAULT: "#EE2B69",
+                    DEFAULT: "#27445D",
                 },
                 secondary: "#FBE843",
                 black: {
@@ -45,7 +45,7 @@ const config: Config = {
             },
         },
     },
-    plugins: [require("tailwindcss-animate"),require("@tailwindcss/typography")],
+    plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
 
 export default config;
