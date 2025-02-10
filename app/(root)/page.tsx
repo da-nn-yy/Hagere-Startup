@@ -1,9 +1,15 @@
-
+import SearchForm from "../components/SearchForm";
 export default function Home() {
   return (
     <>
-      <section className="pink_container">
-        <h1 className="heading">home</h1>
+      <section className="heading_container">
+        <p className="tag">Welcome to</p>
+        <h1 className="heading">Pitch your startup,connect with enterepreneurs</h1>
+        <p className="sub-heading !max-w-3xl">
+            Submit Ideas, Vote on Pitches, and GetNoticed in Virtual Competitions.
+        </p>
+
+        <SearchForm />
       </section>
     </>
   );
