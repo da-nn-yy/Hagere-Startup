@@ -120,7 +120,7 @@
 
     /* searchform */
     .search-form {
-        @apply max-w-3xl w-full min-h-[80px] bg-white border-[5px] border-[#4DA1A9] rounded-[80px] text-[24px] mt-8 px-5 flex flex-row items-center gap-5;
+        @apply max-w-3xl w-full min-h-[80px] bg-white border-[5px] border-[#4da1a9] rounded-[80px] text-[24px] mt-8 px-5 flex flex-row items-center gap-5;
     }
 
     .search-input {
@@ -133,7 +133,7 @@
 
     /* startupcard */
     .startup-card {
-        @apply bg-white border-[5px] border-black py-6 px-5 rounded-[22px] shadow-200 hover:border-primary transition-all duration-500 hover:shadow-300 hover:bg-primary-100;
+        @apply bg-white border-[5px] border-black py-6 px-5 rounded-[22px] shadow-200 hover:border-[#4da1a9] transition-all duration-500 hover:shadow-300 hover:bg-primary-100;
     }
 
     .startup-card_date {
