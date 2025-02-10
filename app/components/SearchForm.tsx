@@ -1,14 +1,7 @@
-
+import SearchFormReset from './searchFormReset'
 import Form from 'next/form'
-const SearchForm = () => {
-    const query = 'Test'
-
-
-    const reset = () => {
-        console.log("by")
-    }
-
-
+const SearchForm = ({query} : {query? : string}) => {
+    
   return (
     <Form action ='/' scroll={false} className='search-form'>
         <input
@@ -18,9 +11,8 @@ const SearchForm = () => {
             placeholder='Search for startups'/>
 
         <div className='flex gap-2'>
-            {query && (
-                <button type='reset' onClick={reset}>
-                </button>)}
+            {query && <SearchFormReset/>}
+            <button type='submit' className='search-btn text-white'>S</button>
         </div>
     </Form>
   )
