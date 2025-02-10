@@ -6,12 +6,12 @@ import Link from 'next/link'
 import {Button} from '@/components/ui/button'
 
 const StartupCard = ({post}:{post:StartupTypeCard}) => {
-    const {createdAt,description, author:{_id:authorId,name}, views,title,catagory,_id,image} = post;
+    const {_createdAt,description, author:{_id:authorId,name}, views,title,catagory,_id,image} = post;
   return (
     <li className='startup-card group'>
         <div className="flex-between">
            <p className='startup-card_date'>
-                {formatDate(post._createdAt)}
+                {formatDate(_createdAt)}
            </p>
            <div className='flex gap-1.5'>
                 <EyeIcon className='size-6 text-primary'/>
