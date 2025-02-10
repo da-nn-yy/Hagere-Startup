@@ -47,8 +47,8 @@
         @apply font-normal text-sm text-white-100/80;
     }
 
-    .pink_container {
-        @apply w-full bg-primary min-h-[530px] pattern flex justify-center items-center flex-col py-10 px-6;
+    .heading_container {
+        @apply w-full bg-primary min-h-[530px] flex justify-center items-center flex-col py-10 px-6 pattern;
     }
 
     .tag {
@@ -56,7 +56,7 @@
     }
 
     .heading {
-        @apply uppercase bg-black px-6 py-3 font-work-sans font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+        @apply uppercase bg-[#4DA1A9] px-6 py-3 font-work-sans font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] rounded-xl max-w-5xl text-center my-5;
     }
 
     .sub-heading {
@@ -120,7 +120,7 @@
 
     /* searchform */
     .search-form {
-        @apply max-w-3xl w-full min-h-[80px] bg-white border-[5px] border-black rounded-[80px] text-[24px] mt-8 px-5 flex flex-row items-center gap-5;
+        @apply max-w-3xl w-full min-h-[80px] bg-white border-[5px] border-[#4DA1A9] rounded-[80px] text-[24px] mt-8 px-5 flex flex-row items-center gap-5;
     }
 
     .search-input {
@@ -202,8 +202,8 @@
         background-image: linear-gradient(
                 to right,
                 transparent 49.5%,
-                rgba(251, 232, 67, 0.2) 49.5%,
-                rgba(251, 232, 67, 0.6) 50.5%,
+                rgba(255, 255, 255, 0.2) 49.5%,
+                rgba(255, 255, 255, 0.6) 50.5%,
                 transparent 50.5%
         );
         background-size: 5% 100%;
