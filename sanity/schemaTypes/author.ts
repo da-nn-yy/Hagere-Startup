@@ -9,8 +9,24 @@ export const author = defineType(schemaDefinition:{
            type:'number'
         }),
         defineField(schemaField:{
-            name:'id',
-            type:'number'
+            name:'name',
+            type:'string'
+         }),
+          defineField(schemaField:{
+            name:'username',
+            type:'string'
+         }),
+          defineField(schemaField:{
+            name:'email',
+            type:'string'
+         }),
+          defineField(schemaField:{
+            name:'image',
+            type:'url'
+         }),
+          defineField(schemaField:{
+            name:'bio',
+            type:'text'
          }),
     ]
 })
