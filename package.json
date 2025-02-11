@@ -11,6 +11,7 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
     "@sanity/image-url": "^1.1.0",
+    "@sanity/schema": "^3.74.1",
     "@sanity/vision": "^3.74.1",
     "@tailwindcss/typography": "^0.5.16",
     "class-variance-authority": "^0.7.1",
@@ -19,9 +20,10 @@
     "next": "15.1.6",
     "next-auth": "^5.0.0-beta.25",
     "next-sanity": "^9.8.55",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sanity": "^3.72.2-canary.32",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanity": "^3.74.2-canary.67",
+    "sanity-plugin-markdown": "^5.0.0",
     "styled-components": "^6.1.15",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"
