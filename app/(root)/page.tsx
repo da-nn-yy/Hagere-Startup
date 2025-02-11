@@ -1,19 +1,16 @@
+
+import { STARTUP_QUERY } from "@/sanity/lib/queries";
 import SearchForm from "../../components/SearchForm";
 import StartupCard from "../../components/StartupCard";
+import { client } from "@/sanity/lib/client";
 export default async function Home({searchParams} : {
     searchParams: Promise<{query: string}>} ) {
 
+        const posts = await client.fetch(STARTUP_QUERY);
+
         const query = (await searchParams).query;
-        const posts = [{
-            _createdAt: new Date(),
-            views: 100,
-            author: {_id:1 , name: "Hagere"},
-            _id:1,
-            description: "A platform for connecting with entrepreneurs",
-            image:"https://images.unsplash.com/photo-1738447429433-69e3ecd0bdd0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            catagory: "Tech",
-            title: "Hagere Startup",
-        }]
+        
+        console.log(JSON.stringify(posts,null,2));
 
   return (
     <>
