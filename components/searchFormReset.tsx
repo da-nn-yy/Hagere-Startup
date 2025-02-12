@@ -17,4 +17,4 @@ const SearchFormReset = () => {
   )
 }
 
-export default SearchFormReset
+export default SearchFormReset;
