@@ -8,7 +8,7 @@ export const experimatal_ppr = true;
 
 const Page = async ({ params }: { params: { id: string } }) => {
 
-    const id = await params.id;
+    const id = (await params).id;
 
     const post = await client.fetch(STARTUP_BY_ID_QUERY, { id });
     console.log({ id });
