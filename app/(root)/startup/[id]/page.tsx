@@ -6,11 +6,11 @@ import React from 'react';
 
 export const experimatal_ppr = true;
 
-const Page = async ({ params }: { params: { id: string } }) => {
+const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
     const id = (await params).id;
 
-    const post = await client.fetch(STARTUP_BY_ID_QUERY, { id });
+    const post = await client.fetch(STARTUP_BY_ID_QUERY,{ id });
     console.log({ id });
 
     if (!post) return notFound();
@@ -19,8 +19,8 @@ const Page = async ({ params }: { params: { id: string } }) => {
         <>
             <section className='header-container !min-h-[230px]'>
                 <p className='tag'>{formatDate(post?._createdAt)}</p>
-                <h1 className="heading">{post?.title}</h1>
-                <p className='sub-heading !max-w-5xl'>{post?.description}</p>
+                <h1 className="heading">{post.title}</h1>
+                <p className='sub-heading !max-w-5xl'>{post.description}</p>
             </section>
         </>
     );
