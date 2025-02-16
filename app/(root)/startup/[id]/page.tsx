@@ -1,12 +1,11 @@
 import React from 'react'
 
-async function Page({params}: {params: Promise<{id: string}>}) {
-    const id = (await params).id
+export const experimatal_ppr = true
+const page = ({params} : {params : Promise<{id : string}> }) => {
+
   return (
-    <>
-        <h1 className="text-3xl">Page number of this startup page is: {id} </h1>
-    </>
+    <div>page</div>
   )
 }
 
-export default Page;
+export default page
