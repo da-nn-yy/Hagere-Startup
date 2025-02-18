@@ -6,9 +6,9 @@ import React from 'react';
 
 export const experimatal_ppr = true;
 
-const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
+export default async function Page({ params }) {
 
-    const id = (await params).id;
+    const id = (await params.id;
 
     const post = await client.fetch(STARTUP_BY_ID_QUERY,{ id });
     console.log({ id });
@@ -25,5 +25,3 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
         </>
     );
 };
-
-export default Page;
