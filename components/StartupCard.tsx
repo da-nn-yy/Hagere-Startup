@@ -43,7 +43,7 @@ const StartupCard = ({post}:{post:StartupTypeCard}) => {
                 <Image src="https://placehold.co/48x48" alt="placeholder" width={48} height={48} className='rounded-full'/>
             </Link>
         </div>
-        <Link href={`/startup/${_id}`}>
+        <Link href={`/startup/${author?._id}`}>
             <p className='startup-card_desc'>
                 {description}
             </p>
