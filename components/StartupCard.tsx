@@ -35,7 +35,7 @@ const StartupCard = ({post}:{post:StartupTypeCard}) => {
                         {author?.name}
                     </p>
                 </Link>
-                <Link href={`/startup/${_id}`}>
+                <Link href={`/startup/${author?._id}`}>
                     <h3 className='text-26-semibold line-clamp-1'>{title}</h3>
                 </Link>
             </div>
