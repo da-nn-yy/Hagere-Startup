@@ -63,4 +63,4 @@ const StartupCard = ({post}:{post:StartupTypeCard}) => {
   )
 }
 
-export default StartupCard
+export default StartupCard;
